@@ -13,6 +13,8 @@
 </fieldset>
 <%% end %>
 <hr>
+<table>
+	<tr><td>
     <% attributes.each do |attribute| -%>
       <div class="clearfix">    
    	     <%%= f.label :<%= attribute.name %> %>
@@ -21,9 +23,10 @@
 	    </div>
       </div>
     <% end -%>
-  
+</td></tr>
+</table> 
   <div class="actions">
-    <%%= f.submit t('botao.submit'), :class => "btn primary" %>
+    <%%= f.submit t('botao.salvar'), :class => "btn primary" %>
     <a href="<%%= <%= plural_table_name %>_path %>"><button class="btn" name="btnback"><%%= t('botao.cancelar')%></button></a>
   </div>
 <%% end %>

@@ -1,7 +1,5 @@
 ProjetoBase::Application.routes.draw do
   
-  resources :pessoas
-
   resources :home, :only => [:index]
   
   root :to => 'home#index'
