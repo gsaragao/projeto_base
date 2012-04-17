@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  idade: 1
+  cpf: MyString
+  rg: MyString
+  titulo_eleitor: MyString
+  data_nascimento: 2012-04-17
+  observacoes: MyText
+
+two:
+  nome: MyString
+  idade: 1
+  cpf: MyString
+  rg: MyString
+  titulo_eleitor: MyString
+  data_nascimento: 2012-04-17
+  observacoes: MyText
