@@ -62,7 +62,7 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
   
   def load_<%= singular_table_name %>
-    @<%= singular_table_name %> = <%= orm_class.build(class_name, "params[:#{singular_table_name}]") %>
+    @<%= singular_table_name %> = <%= orm_class.find(class_name, "params[:id]") %>
   end
   
   def load_combos 
